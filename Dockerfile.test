@@ -1,0 +1,14 @@
+# BASE Image
+FROM node:alpine
+
+WORKDIR '/app'
+
+# Package Set up
+COPY package.json .
+RUN npm install
+
+# Copy app
+COPY . .
+
+# Start App
+CMD ["npm", "test", "--", "--coverage"]
