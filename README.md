@@ -9,5 +9,6 @@ Host this react-app on AWS with Docker
 ## Tech Stack
 
 -   React
+-   CI with Travis CI
 -   Docker
 -   AWS Hosting
